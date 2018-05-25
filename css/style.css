@@ -74,14 +74,18 @@ nav ul {
 nav li a {
   color: rgba(51, 51, 51, 1);
   text-transform: uppercase;
-  letter-spacing: 1rem;
+  letter-spacing: .1rem;
   margin-bottom: 125px;
   margin-top: 10px;
   padding: 14px 16px 0 0;
   float: right;
   display: inline-block;
-  margin: 10px 25px 140px -140px;
+  margin: 10px 25px 150px -140px;
   opacity: 0.6;
+  background-color: transparent;
+  text-decoration: none;
+  padding-left: 150px;
+  font-size: 1rem;
 }
 
 h1 {
@@ -94,17 +98,16 @@ h1 {
   text-transform: uppercase;
   letter-spacing: .65rem;
   text-align: center;
-  color: rgba(51, 51, 51, 1);
+  color: rgba(51, 51, 51, 0.6);
   margin-top: 50px;
   margin-bottom: 150px;
-  opacity: 0.6;
 }
 
 .about h1 {
   color: rgba(245, 157, 135, .95);
   margin-left: 150px;
   display: inline-block;
-  margin-top: 100px;
+  margin-top: 90px;
 }
 
 .aboutme {
@@ -122,7 +125,7 @@ h1 {
   opacity: 0.6;
 }
 
-a:link {
+.readmore a {
   color: rgba(51, 51, 51, 1);
   letter-spacing: .1rem;
   line-height: 2;
@@ -135,32 +138,37 @@ a:link {
 
 #portrait img {
   width: 30%;
-  margin-top: 100px;
+  margin-top: 105px;
   margin-left: 60%;
   float: right;
   display: inline-block;
   position: absolute;
+  opacity: 0.9;
 }
 
 .work h1 {
   color: rgba(234, 192, 23, .9);
   text-align: center;
-  margin-top: 250px;
-}
-
-.work {
-  float: none;
+  margin-top: 345px;
 }
 
 .work img {
-  width: 25%;
-  display: inline-table;
-  margin: 50px -20px 200px -50px;
+  width: 400px;
+  display: inline-block;
+  margin: 50px -35px 35px 75px;
+  opacity: 0.85;
 }
 
-.sayhello h1 {
+.sayhello a h1 {
   color: rgba(111, 167, 168, .9);
   text-align: center;
+  margin-top: 150px;
+  margin-bottom: 200px;
+}
+
+.helloLink {
+  background-color: transparent;
+  text-decoration: none;
 }
 
 /******************************************
@@ -201,15 +209,12 @@ a:link {
 .aboutmePage {
   font-family: 'Assistant', sans-serif;
   font-size: 1rem;
-  color: rgba(51, 51, 51, 1);
+  color: rgba(51, 51, 51, 0.6);
   letter-spacing: .1rem;
-  line-height: 2;
   width: 50%;
   line-height: 2;
   display: inline-block;
-  opacity: 0.6;
-  /*margin-bottom: 200px;*/
-  margin: 35px 25% 200px 26%;
+  margin: 50px 25% 10px 26%;
 }
 
 #portraitAbout img {
@@ -220,65 +225,361 @@ a:link {
   float: left;
 }
 
+.copyrightAbout {
+  text-align: left;
+  letter-spacing: 1.5px;
+  color: rgba(51, 51, 51, 1);
+  opacity: 0.6;
+  font-size: .75rem;
+  margin-left: 10px;
+  margin-top: 100px;
+}
+
 /******************************************
 /* WORK PAGE
 /*******************************************/
 
-/*.workWork h1 {
-  color: rgba(234, 192, 23, .9);
+.projects {
+  display: -webkit-flex; /* Safari */
+    -webkit-align-items: center; /* Safari 7.0+ */
+    display: flex;
+    align-items: center;
+    width: 220px;
+    height: 300px;
+    margin-top: 500px;
+    margin-left: 45px;
+}
+
+.projects img {
+  display: inline-block;
+  margin-left: 35px;
+  margin-top: 35px;
+}
+
+.copyrightWork {
+  text-align: left;
+  letter-spacing: 1.5px;
+  color: rgba(51, 51, 51, 1);
+  opacity: 0.6;
+  font-size: .75rem;
+  margin-left: 10px;
+  margin-top: 700px;
+}
+
+/******************************************
+/* AUDREY NAPOLEON PROJECT PAGE
+/*******************************************/
+
+.audreyProjects {
+  display: -webkit-flex; /* Safari */
+    -webkit-align-items: center;  Safari 7.0+ 
+    display: flex;
+    align-items: center;
+    height: 300px;
+    margin-top: 100px;
+    margin-left: 3%;
+}
+
+.audreyProjects img {
+  margin-left: 35px;
+  margin-top: 35px;
+}
+
+.copyrightAudrey {
+  text-align: left;
+  letter-spacing: 1.5px;
+  color: rgba(51, 51, 51, 1);
+  opacity: 0.6;
+  font-size: .75rem;
+  margin-left: 10px;
+  margin-top: 300px;
+}
+
+/******************************************
+/* FILM PROJECT PAGE
+/*******************************************/
+
+.filmProjects {
+  display: -webkit-flex; /* Safari */
+    -webkit-align-items: center;  Safari 7.0+ 
+    display: flex;
+    align-items: center;
+    width: 220px;
+    height: 300px;
+    margin-top: 1400px;
+    margin-left: 33.33%;
+}
+
+.filmProjects img {
+  margin-left: 35px;
+  margin-top: 35px;
+}
+
+.copyrightFilm {
+  text-align: left;
+  letter-spacing: 1.5px;
+  color: rgba(51, 51, 51, 1);
+  opacity: 0.6;
+  font-size: .75rem;
+  margin-left: 10px;
+  margin-top: 1600px;
+}
+
+/******************************************
+/* DIANA GEORGIE PROJECT PAGE
+/*******************************************/
+
+.dianaProjects {
+  display: -webkit-flex; /* Safari */
+    -webkit-align-items: center;  Safari 7.0+ 
+    display: flex;
+    align-items: center;
+    margin-top: -45px;
+    margin-left: 22.5%;
+    margin-bottom: -1350px;
+}
+
+.dianaProjects img {
+  margin-left: 35px;
+  margin-top: 35px;
+}
+
+.copyrightDiana {
+  text-align: left;
+  letter-spacing: 1.5px;
+  color: rgba(51, 51, 51, 1);
+  opacity: 0.6;
+  font-size: .75rem;
+  margin-left: 10px;
+  margin-top: 1500px;
+}
+
+
+/******************************************
+/* GENLUX PROJECT PAGE
+/*******************************************/
+
+.genluxProjects {
+  display: -webkit-flex; /* Safari */
+    -webkit-align-items: center;  Safari 7.0+ 
+    display: flex;
+    align-items: center;
+    margin-top: -45px;
+    margin-left: 22.5%;
+    margin-bottom: -1350px;
+}
+
+.genluxProjects img {
+  margin-left: 35px;
+  margin-top: 35px;
+}
+
+.copyrightGenlux {
+  text-align: left;
+  letter-spacing: 1.5px;
+  color: rgba(51, 51, 51, 1);
+  opacity: 0.6;
+  font-size: .75rem;
+  margin-left: 10px;
+  margin-top: 1500px;
+}
+
+/******************************************
+/* GUCCI PROJECT PAGE
+/*******************************************/
+
+.gucciProjects {
+  display: -webkit-flex; /* Safari */
+    -webkit-align-items: center;  Safari 7.0+ 
+    display: flex;
+    align-items: center;
+    margin-top: -45px;
+    margin-left: 22.5%;
+    margin-bottom: -1350px;
+}
+
+.gucciProjects img {
+  margin-left: 35px;
+  margin-top: 35px;
+}
+
+.copyrightGucci {
+  text-align: left;
+  letter-spacing: 1.5px;
+  color: rgba(51, 51, 51, 1);
+  opacity: 0.6;
+  font-size: .75rem;
+  margin-left: 10px;
+  margin-top: 1500px;
+}
+
+/******************************************
+/* LULU LEMON PROJECT PAGE
+/*******************************************/
+
+.luluProjects {
+  display: -webkit-flex; /* Safari */
+    -webkit-align-items: center;  Safari 7.0+ 
+    display: flex;
+    align-items: center;
+    margin-top: -45px;
+    margin-left: 22.5%;
+    margin-bottom: -1350px;
+}
+
+.luluProjects img {
+  margin-left: 35px;
+  margin-top: 35px;
+}
+
+.copyrightLulu {
+  text-align: left;
+  letter-spacing: 1.5px;
+  color: rgba(51, 51, 51, 1);
+  opacity: 0.6;
+  font-size: .75rem;
+  margin-left: 10px;
+  margin-top: 1500px;
+}
+
+/******************************************
+/* PEPSI PROJECT PAGE
+/*******************************************/
+
+.pepsiProjects {
+  display: -webkit-flex; /* Safari */
+    -webkit-align-items: center;  Safari 7.0+ 
+    display: flex;
+    align-items: center;
+    margin-top: -45px;
+    margin-left: 22.5%;
+    margin-bottom: -1350px;
+}
+
+.pepsiProjects img {
+  margin-left: 35px;
+  margin-top: 35px;
+}
+
+.copyrightPepsi {
+  text-align: left;
+  letter-spacing: 1.5px;
+  color: rgba(51, 51, 51, 1);
+  opacity: 0.6;
+  font-size: .75rem;
+  margin-left: 10px;
+  margin-top: 1500px;
+}
+
+/******************************************
+/* SASSOON PROJECT PAGE
+/*******************************************/
+
+.sassoonProjects {
+  display: -webkit-flex; /* Safari */
+    -webkit-align-items: center;  Safari 7.0+ 
+    display: flex;
+    align-items: center;
+    margin-top: -45px;
+    margin-left: 18.5%;
+    margin-bottom: -1350px;
+}
+
+.sassoonProjects img {
+  margin-left: 35px;
+  margin-top: 35px;
+}
+
+.copyrightSassoon {
+  text-align: left;
+  letter-spacing: 1.5px;
+  color: rgba(51, 51, 51, 1);
+  opacity: 0.6;
+  font-size: .75rem;
+  margin-left: 10px;
+  margin-top: 1500px;
+}
+
+/******************************************
+/* ST. VINCENT PROJECT PAGE
+/*******************************************/
+
+.stVincentProjects {
+  display: -webkit-flex; /* Safari */
+    -webkit-align-items: center;  Safari 7.0+ 
+    display: flex;
+    align-items: center;
+    height: 300px;
+    margin-top: 100px;
+    margin-left: 3%;
+}
+
+.stVincentProjects img {
+  margin-left: 35px;
+  margin-top: 35px;
+}
+
+.copyrightStVincent {
+  text-align: left;
+  letter-spacing: 1.5px;
+  color: rgba(51, 51, 51, 1);
+  opacity: 0.6;
+  font-size: .75rem;
+  margin-left: 10px;
+  margin-top: 250px;
+}
+
+/******************************************
+/* STYLE STATION PROJECT PAGE
+/*******************************************/
+
+.ssProjects {
+  display: -webkit-flex; /* Safari */
+    -webkit-align-items: center;  Safari 7.0+ 
+    display: flex;
+    align-items: center;
+    margin-top: -45px;
+    margin-left: 22.5%;
+    margin-bottom: -1350px;
+}
+
+.ssProjects img {
+  margin-left: 35px;
+  margin-top: 35px;
+}
+
+.copyrightSs {
+  text-align: left;
+  letter-spacing: 1.5px;
+  color: rgba(51, 51, 51, 1);
+  opacity: 0.6;
+  font-size: .75rem;
+  margin-left: 10px;
+  margin-top: 1500px;
+}
+
+/******************************************
+/* CONTACT PAGE
+/*******************************************/
+
+.contactPage h1 {
+  color: rgba(111, 167, 168, .9);
   text-align: center;
   margin-top: -40px;
   margin-bottom: 35px;
-}
-*/
-.slideshowContainer {
-  margin-left: 25%;
-  margin-top: 5px;
-  width: 50%;
+
 }
 
-.buttonLeft {
-  display: inline-block;
-  float: left;
-  margin-top: -760px;
-  margin-left: -100px;
-  -webkit-border-radius: 13;
-  -moz-border-radius: 13;
-  border-radius: 13px;
-  font-family: Courier New;
-  color: #333333;
-  font-size: 31px;
-  background: #E5EAD7;
-  padding: 10px 20px 6px 20px;
-  text-decoration: none;
-}
+.contactPage p {
+  text-align: center;
+  font-family: 'Assistant', sans-serif;
+  font-size: 1rem;
+  color: rgba(51, 51, 51, 0.6);
+  letter-spacing: .1rem;
+  line-height: 2;
+  margin-top: 75px;
+  margin-bottom: 300px;
+  text-transform: uppercase;
+}*/
 
-.buttonLeft:hover {
-  background: rgba(30, 61, 27, .55);
-  text-decoration: none;
-  color: #E5EAD7;
-}
-
-
-.buttonRight {
-  display: inline-block;
-  float: right;
-  margin-top: -760px;
-  margin-right: -100px;
-   -webkit-border-radius: 13;
-  -moz-border-radius: 13;
-  border-radius: 13px;
-  font-family: Courier New;
-  color: #333333;
-  font-size: 31px;
-  background: #E5EAD7;
-  padding: 10px 20px 6px 20px;
-  text-decoration: none;
-}
-
-.buttonRight:hover {
-  background: rgba(30, 61, 27, .55);
-  text-decoration: none;
-  color: #E5EAD7;
-}
 
